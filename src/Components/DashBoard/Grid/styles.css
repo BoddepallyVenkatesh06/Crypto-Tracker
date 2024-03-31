@@ -1,0 +1,149 @@
+.grid-container {
+    width: 280px;
+    height: auto;
+    background-color: var(--darkgrey);
+    border-radius: 1rem;
+    padding: 2rem;
+    border: 2px solid var(--darkgrey);
+    cursor: pointer;
+}
+
+.grid-container:hover {
+    border-color: var(--green);
+    transition: all 0.3s;
+}
+
+.grid-container-red:hover {
+    border-color: var(--red);
+    transition: all 0.3s;
+}
+
+.info-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.coin-info-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.coin-image {
+    height: 3.5rem;
+    width: 3.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.coin-name-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.25rem;
+}
+
+.coin-symbol {
+    font-size: 1.2rem;
+    color: var(--white);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.coin-name {
+    font-size: 1rem;
+    color: var(--grey);
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.price-chip {
+    min-width: 4rem;
+    text-align: center;
+}
+
+.price-chip,
+.trending-icon {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--green);
+    border-radius: 3rem;
+    font-weight: 600;
+    color: var(--green);
+}
+
+.trending-icon {
+    padding: 0.5rem;
+}
+
+.price-chip:hover,
+.trending-icon:hover {
+    background-color: var(--green);
+    color: var(--white);
+    transition: all 0.3s;
+}
+
+.red {
+    color: var(--red);
+    border-color: var(--red);
+}
+
+.red:hover {
+    background-color: var(--red);
+}
+
+.coin-price {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--green);
+}
+
+.coin-price-red {
+    color: var(--red);
+}
+
+.coin-name-2 {
+    font-size: 1rem;
+    color: var(--grey);
+    font-weight: 600;
+}
+
+.watchlist-icon {
+    padding: 0.5rem;
+    display: block;
+    color: var(--green);
+    font-size: 2rem !important;
+    margin-left: auto;
+    border: 2px solid var(--green);
+    border-radius: 3rem;
+    font-weight: 600;
+}
+
+.watchlist-icon:hover {
+    background-color: var(--green);
+    color: var(--white);
+    transition: all 0.3s;
+}
+
+.watchlist-icon-red {
+    color: var(--red);
+    border: 2px solid var(--red);
+}
+
+.watchlist-icon-red:hover {
+    background-color: var(--red) !important;
+    color: var(--white);
+    transition: all 0.3s;
+}
+
+@media only screen and (max-width: 800px) {
+    .watchlist-icon {
+        font-size: 1rem !important;
+        padding: 0.35rem;
+    }
+}
